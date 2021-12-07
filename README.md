@@ -19,6 +19,9 @@ This project merge graphql schemas from the following services:
 -
 https://www.contentful.com/developers/docs/references/authentication/
 
+***CONTENTFUL_EXTENSION*** configuration in the .env file is used to rename all graphql schema names. It was added to prevent duplicate names from merged schemas.
+If this configuration is empty, default names will be displayed.
+
 ---
 
 **Commercetools**
@@ -31,3 +34,8 @@ https://docs.commercetools.com/merchant-center/api-clients
 2. Separator should be comma instead of space
 
 ***Example*** - manage_my_profile,manage_my_payments,manage_my_orders,create_anonymous_token
+
+---
+
+***COMMERCETOOLS_EXTENSION*** configuration in the .env file is used to rename all graphql schema names. It was added to prevent duplicate names from merged schemas.
+If this configuration is empty, default names will be displayed.
