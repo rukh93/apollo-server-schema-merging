@@ -15,7 +15,7 @@ This project merge graphql schemas from the following services:
 
 ---
 
-**Contentful token**
+**Contentful**
 -
 https://www.contentful.com/developers/docs/references/authentication/
 
