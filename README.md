@@ -7,18 +7,23 @@ This project merge graphql schemas from the following services:
 ---
 **Installation**
 -
+
 `git clone git@github.com:rukh93/apollo-server-stitching.git`\
 `cd apollo-server-stitching`\
 `npm install`\
 `npm run dev`
+
 ---
+
 **Contentful token**
 -
 https://www.contentful.com/developers/docs/references/authentication/
 
 ---
+
 **Commercetools**
 -
+
 https://docs.commercetools.com/merchant-center/api-clients
 
 ***COMMERCETOOLS_SCOPES*** config in the .env file should be with the following options:
