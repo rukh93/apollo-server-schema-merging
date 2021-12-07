@@ -15,8 +15,10 @@
   "dependencies": {
     "@babel/core": "^7.15.8",
     "@commercetools/sdk-auth": "^3.0.12",
+    "@graphql-tools/load-files": "^6.5.1",
     "@graphql-tools/schema": "^8.3.0",
     "@graphql-tools/wrap": "^8.2.0",
+    "apollo-datasource-rest": "^3.3.0",
     "apollo-server": "^3.4.0",
     "cross-fetch": "^3.1.4",
     "dotenv": "^10.0.0",
