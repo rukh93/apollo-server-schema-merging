@@ -1,1 +1,3 @@
-export { PostAPI } from './Post';
+export {
+    Search as SearchAPI
+} from './IMDB';

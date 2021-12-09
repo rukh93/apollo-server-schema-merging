@@ -1,1 +1,0 @@
-export PostAPI from './PostAPI';

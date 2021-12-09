@@ -1,7 +1,7 @@
 require('dotenv').config();
 import { ApolloServer } from 'apollo-server';
 import { mergeSchemas } from '@graphql-tools/schema';
-import { PostAPI } from './dataSources';
+import { SearchAPI } from './dataSources';
 import schema from './schema';
 import {
     getContentfulSchema,
@@ -21,7 +21,7 @@ const port = process.env.PORT || 4000;
 
         const dataSources = () => {
             return {
-                postAPI: new PostAPI(),
+                searchAPI: new SearchAPI(),
             };
         };
 
@@ -37,7 +37,7 @@ const port = process.env.PORT || 4000;
             }),
             dataSources,
             context,
-            introspection: process.env.NODE_ENV !== 'production',
+            // introspection: process.env.NODE_ENV !== 'production',
         });
 
         server.listen(port).then(({ url }) => {

@@ -1,0 +1,11 @@
+type Movie {
+    id: ID!
+    description: String
+    image: String
+    title: String
+    resultType: String
+}
+
+type Query {
+    searchMovie(expression: String!): [Movie]
+}
