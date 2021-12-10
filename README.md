@@ -4,7 +4,7 @@ This project merge graphql schemas from the following services:
 1. Contentful
 2. Commercetools
 
-<img src="https://raw.githubusercontent.com/rukh93/apollo-server-stitching/main/diagram.png" height="450">
+<img src="./diagram.png" height="450">
 
 ---
 **Installation**
