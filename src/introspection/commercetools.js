@@ -17,7 +17,7 @@ export const getCommercetoolsSchema = async () => {
 
     const authClient = new SdkAuth({
         host: COMMERCETOOLS_AUTH,
-        projectKey: 'test',
+        projectKey: COMMERCETOOLS_PROJECT_KEY,
         disableRefreshToken: false,
         credentials: {
             clientId: COMMERCETOOLS_CLIENT_ID,
