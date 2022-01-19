@@ -1,8 +1,11 @@
 **DESCRIPTION**
 -
-This project merge graphql schemas from the following services:
+This project creates a unified GraphQL schema from the following GraphQL APIs:
+
 1. Contentful
 2. Commercetools
+
+This gives us the benefit of reducing multiple data queries for our data in a single request from one schema.
 
 <img src="./diagram.png" height="450">
 
