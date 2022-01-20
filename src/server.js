@@ -24,7 +24,7 @@ const port = process.env.PORT || 4000;
             context: async ({ req }) => {
                 const apiKey = req.headers['api-key'];
 
-                if (apiKey !== process.env.API_KEY && process.env.NODE_ENV === 'production') {
+                if (process.env.NODE_ENV === 'production' && apiKey !== process.env.API_KEY) {
                     throw new AuthenticationError('Please check your api key.');
                 }
 
