@@ -22,7 +22,7 @@ const port = process.env.PORT || 4000;
                 schemas: allSchemas,
             }),
             context: async ({ req }) => {
-                const apiKey = req.headers['API-KEY'];
+                const apiKey = req.headers['api-key'];
 
                 if (apiKey === process.env.API_KEY) {
                     throw new AuthenticationError('Please check your api key.');
