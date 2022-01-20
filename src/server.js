@@ -1,5 +1,5 @@
 require('dotenv').config();
-import { ApolloServer } from 'apollo-server';
+import { ApolloServer, AuthenticationError } from 'apollo-server';
 import { mergeSchemas } from '@graphql-tools/schema';
 import {
     getContentfulSchema,
@@ -21,6 +21,15 @@ const port = process.env.PORT || 4000;
             schema: mergeSchemas({
                 schemas: allSchemas,
             }),
+            context: async ({ req }) => {
+                const apiKey = req.headers['API-KEY'];
+
+                if (apiKey === process.env.API_KEY) {
+                    throw new AuthenticationError('Please check your api key.');
+                }
+
+                return { apiKey };
+            },
             introspection: process.env.NODE_ENV !== 'production',
         });
 
