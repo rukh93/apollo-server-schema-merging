@@ -57,3 +57,13 @@ Commercetools .env file has key *COMMERCETOOLS_EXTENSION*.\
 This extension renames your graphql objects in case if you have in two different schemas the same object names.\
 Keep it empty if you don't have the same object names in two different schemas.\
 For more information: https://www.graphql-tools.com/docs/schema-wrapping
+
+---
+
+**Apollo Server**
+-
+
+Following this link you can find information regarding Apollo Server:
+https://www.apollographql.com/docs/apollo-server
+
+---
