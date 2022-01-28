@@ -31,6 +31,10 @@ By the following url you can find information regarding graphql:
 Example of the contentful graphql endpoint:
 `https://graphql.contentful.com/content/v1/spaces/{SPACE}`
 
+Contentful .env file has key *CONTENTFUL_EXTENSION*.\
+This extension wraps your graphql objects in case if you have in two different schemas the same object names.\
+Keep it empty if you don't have the same object names in two different schemas.
+
 ---
 
 **Commercetools**
@@ -43,3 +47,7 @@ Example of the contentful graphql endpoint:
 2. Separator should be comma instead of space
 
 ***Example*** - manage_my_profile,manage_my_payments,manage_my_orders,create_anonymous_token
+
+Commercetools .env file has key *COMMERCETOOLS_EXTENSION*.\
+This extension wraps your graphql objects in case if you have in two different schemas the same object names.\
+Keep it empty if you don't have the same object names in two different schemas.
