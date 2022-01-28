@@ -22,14 +22,21 @@ This gives us the benefit of reducing multiple data queries for our data in a si
 
 **Contentful**
 -
-https://www.contentful.com/developers/docs/references/authentication/
+By the following url you can find information regarding a token and space id:
+`https://www.contentful.com/developers/docs/references/authentication/`
+
+By the following url you can find information regarding graphql:
+`https://www.contentful.com/developers/docs/references/graphql/`
+
+Example of the contentful graphql endpoint:
+`https://graphql.contentful.com/content/v1/spaces/{SPACE}`
 
 ---
 
 **Commercetools**
 -
 
-https://docs.commercetools.com/merchant-center/api-clients
+`https://docs.commercetools.com/merchant-center/api-clients`
 
 ***COMMERCETOOLS_SCOPES*** config in the .env file should be with the following options:
 1. Without a project key
