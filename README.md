@@ -25,7 +25,7 @@ This gives us the benefit of reducing multiple data queries for our data in a si
 
 In the .env.example file you can see example of API_KEY.\
 This key is used only in production mode to disable unauthorized access to the schema. See: `src/server.js`\
-You need to pass it from your web application to the server in the request headers as `'api-key': YOUR_API_KEY`\
+You need to pass it from your web application to the server in the request headers as `'api-key': YOUR_API_KEY`
 
 ---
 
