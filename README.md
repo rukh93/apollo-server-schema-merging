@@ -15,6 +15,7 @@ This gives us the benefit of reducing multiple data queries for our data in a si
 
 `git@github.com:rukh93/apollo-server-schema-merging.git`\
 `cd apollo-server-schema-merging`\
+`cp .env.example .env`\
 `npm install`\
 `npm run dev`
 
