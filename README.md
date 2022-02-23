@@ -56,6 +56,8 @@ This extension renames your graphql objects in case if you have in two different
 Keep it empty if you don't have the same object names in two different schemas.\
 For more information: https://www.graphql-tools.com/docs/schema-wrapping
 
+To use this example with PWA Studio replace MAGENTO_BACKEND_URL with Apollo Server. 
+
 ---
 
 **Apollo Server**
