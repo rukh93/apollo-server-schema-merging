@@ -1,9 +1,9 @@
 require('dotenv').config();
-import { ApolloServer, AuthenticationError } from 'apollo-server';
+import { ApolloServer } from 'apollo-server';
 import { mergeSchemas } from '@graphql-tools/schema';
 import {
-    getContentfulSchema,
-    getCommercetoolsSchema
+    getMagentoSchema,
+    getContentfulSchema
 } from './introspection';
 
 const port = process.env.PORT || 4000;
@@ -12,8 +12,8 @@ const port = process.env.PORT || 4000;
     try {
         const allSchemas = await Promise.all(
             [
+                getMagentoSchema(),
                 getContentfulSchema(),
-                getCommercetoolsSchema()
             ]
         );
 
@@ -21,15 +21,6 @@ const port = process.env.PORT || 4000;
             schema: mergeSchemas({
                 schemas: allSchemas,
             }),
-            context: async ({ req }) => {
-                const apiKey = req.headers['api-key'];
-
-                if (process.env.NODE_ENV === 'production' && apiKey !== process.env.API_KEY) {
-                    throw new AuthenticationError('Please check your api key.');
-                }
-
-                return { apiKey };
-            },
             introspection: process.env.NODE_ENV !== 'production',
         });
 
